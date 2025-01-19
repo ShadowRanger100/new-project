@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS practise</title>
+
+    <style>
+        .red-button{
+            background-color: red;
+            color:white;
+            border: none;
+        }
+
+        .yellow-button{
+            background-color: yellow;
+            color: black;
+            border: solid;
+        }
+    </style>
+</head>
+<body>
+    <button class="red-button" 
+    onclick="
+    alert('good job!'); //Runs later, after <script>
+    ">
+    Hello</button>
+    <p>Paragraph of <button class="yellow-button">Hello</button>  text</p>
+
+    <!-- Runs first -->
+    <script>
+        alert('hello');
+
+        console.log(2+2);
+        console.log('some' +'text');
+    </script>
+
+</body>
+</html>
